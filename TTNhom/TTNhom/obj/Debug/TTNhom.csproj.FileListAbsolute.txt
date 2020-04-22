@@ -1,0 +1,10 @@
+D:\ttn_detai1\TTNhom\TTNhom\bin\Debug\TTNhom.exe.config
+D:\ttn_detai1\TTNhom\TTNhom\bin\Debug\TTNhom.exe
+D:\ttn_detai1\TTNhom\TTNhom\bin\Debug\TTNhom.pdb
+D:\ttn_detai1\TTNhom\TTNhom\obj\Debug\TTNhom.csprojAssemblyReference.cache
+D:\ttn_detai1\TTNhom\TTNhom\obj\Debug\TTNhom.LoginForm.resources
+D:\ttn_detai1\TTNhom\TTNhom\obj\Debug\TTNhom.Properties.Resources.resources
+D:\ttn_detai1\TTNhom\TTNhom\obj\Debug\TTNhom.csproj.GenerateResource.cache
+D:\ttn_detai1\TTNhom\TTNhom\obj\Debug\TTNhom.csproj.CoreCompileInputs.cache
+D:\ttn_detai1\TTNhom\TTNhom\obj\Debug\TTNhom.exe
+D:\ttn_detai1\TTNhom\TTNhom\obj\Debug\TTNhom.pdb
