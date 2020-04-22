@@ -33,7 +33,7 @@
             this.menuItemDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemNhanSu = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemTTCN = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemCheDo = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemBaoHiem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemChucNang = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemQuanLy = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemPhongBan = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,7 +62,6 @@
             this.panel_show.Name = "panel_show";
             this.panel_show.Size = new System.Drawing.Size(757, 384);
             this.panel_show.TabIndex = 19;
-            this.panel_show.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_show_Paint);
             // 
             // menuStrip1
             // 
@@ -118,7 +117,7 @@
             this.menuItemDanhMuc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemNhanSu,
             this.menuItemTTCN,
-            this.menuItemCheDo});
+            this.menuItemBaoHiem});
             this.menuItemDanhMuc.Enabled = false;
             this.menuItemDanhMuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuItemDanhMuc.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -138,12 +137,14 @@
             this.menuItemTTCN.Name = "menuItemTTCN";
             this.menuItemTTCN.Size = new System.Drawing.Size(197, 24);
             this.menuItemTTCN.Text = "Thông Tin Cá Nhân";
+            this.menuItemTTCN.Click += new System.EventHandler(this.menuItemTTCN_Click);
             // 
-            // menuItemCheDo
+            // menuItemBaoHiem
             // 
-            this.menuItemCheDo.Name = "menuItemCheDo";
-            this.menuItemCheDo.Size = new System.Drawing.Size(197, 24);
-            this.menuItemCheDo.Text = "Chế độ";
+            this.menuItemBaoHiem.Name = "menuItemBaoHiem";
+            this.menuItemBaoHiem.Size = new System.Drawing.Size(197, 24);
+            this.menuItemBaoHiem.Text = "Bảo Hiểm";
+            this.menuItemBaoHiem.Click += new System.EventHandler(this.menuItemBaoHiem_Click);
             // 
             // menuItemChucNang
             // 
@@ -173,6 +174,7 @@
             this.menuItemPhongBan.Name = "menuItemPhongBan";
             this.menuItemPhongBan.Size = new System.Drawing.Size(186, 24);
             this.menuItemPhongBan.Text = "&Phòng ban";
+            this.menuItemPhongBan.Click += new System.EventHandler(this.menuItemPhongBan_Click);
             // 
             // menuItemBoPhan
             // 
@@ -221,7 +223,7 @@
         public System.Windows.Forms.ToolStripMenuItem menuItemDanhMuc;
         private System.Windows.Forms.ToolStripMenuItem menuItemNhanSu;
         private System.Windows.Forms.ToolStripMenuItem menuItemTTCN;
-        private System.Windows.Forms.ToolStripMenuItem menuItemCheDo;
+        private System.Windows.Forms.ToolStripMenuItem menuItemBaoHiem;
         public System.Windows.Forms.ToolStripMenuItem menuItemChucNang;
         public System.Windows.Forms.ToolStripMenuItem menuItemQuanLy;
         private System.Windows.Forms.ToolStripMenuItem menuItemPhongBan;

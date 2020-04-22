@@ -53,8 +53,28 @@ namespace TTNhom {
             form.Show();
         }
 
-        private void panel_show_Paint(object sender , PaintEventArgs e) {
+        private void menuItemTTCN_Click(object sender , EventArgs e) {
             ThongTinCaNhanForm form = new ThongTinCaNhanForm();
+            panel_show.Show();
+            panel_show.Controls.Clear();
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            panel_show.Controls.Add(form);
+            form.Show();
+        }
+
+        private void menuItemBaoHiem_Click(object sender , EventArgs e) {
+            BaoHiemForm form = new BaoHiemForm();
+            panel_show.Show();
+            panel_show.Controls.Clear();
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            panel_show.Controls.Add(form);
+            form.Show();
+        }
+
+        private void menuItemPhongBan_Click(object sender , EventArgs e) {
+            PhongBanForm form = new PhongBanForm();
             panel_show.Show();
             panel_show.Controls.Clear();
             form.TopLevel = false;
