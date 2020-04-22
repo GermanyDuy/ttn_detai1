@@ -40,9 +40,11 @@ namespace TTNhom {
                 quyen = table.Rows[0][2].ToString().Trim();
 
                 if(quyen == "admin") {
+                    MainForm.quyen = "admin";
                     MessageBox.Show("Đăng nhập vào hệ thống (Quyền Admin) !" , "Thông báo !");
                 }
                 else {
+                    MainForm.quyen = "user";
                     MessageBox.Show("Đăng nhập vào hệ thống (Quyền user) !" , "Thông báo !");
 
                 }
