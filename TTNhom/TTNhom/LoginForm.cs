@@ -48,7 +48,7 @@ namespace TTNhom {
                     MessageBox.Show("Đăng nhập vào hệ thống (Quyền user) !" , "Thông báo !");
 
                 }
-
+                this.Hide();
                 MainForm main = new MainForm();
                 main.Show();
             }

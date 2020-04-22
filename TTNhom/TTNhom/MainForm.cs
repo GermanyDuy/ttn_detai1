@@ -82,5 +82,19 @@ namespace TTNhom {
             panel_show.Controls.Add(form);
             form.Show();
         }
+
+        private void menuItemLuongNV_Click(object sender , EventArgs e) {
+            LuongNVForm form = new LuongNVForm();
+            panel_show.Show();
+            panel_show.Controls.Clear();
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            panel_show.Controls.Add(form);
+            form.Show();
+        }
+
+        private void cmd_exit_Click(object sender , EventArgs e) {
+            Application.Exit();
+        }
     }
 }

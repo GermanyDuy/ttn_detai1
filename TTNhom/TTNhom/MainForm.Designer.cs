@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmd_exit = new System.Windows.Forms.Button();
             this.panel_show = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuItemTK = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,9 +38,7 @@
             this.menuItemChucNang = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemQuanLy = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemPhongBan = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemBoPhan = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemLuongNV = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemBangLuong = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -47,12 +46,33 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::TTNhom.Properties.Resources.Main;
+            this.panel1.Controls.Add(this.cmd_exit);
             this.panel1.Controls.Add(this.panel_show);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(936, 561);
             this.panel1.TabIndex = 17;
+            // 
+            // cmd_exit
+            // 
+            this.cmd_exit.BackColor = System.Drawing.Color.Transparent;
+            this.cmd_exit.BackgroundImage = global::TTNhom.Properties.Resources._133;
+            this.cmd_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cmd_exit.FlatAppearance.BorderSize = 0;
+            this.cmd_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cmd_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.cmd_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmd_exit.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmd_exit.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.cmd_exit.Location = new System.Drawing.Point(30, 529);
+            this.cmd_exit.Name = "cmd_exit";
+            this.cmd_exit.Size = new System.Drawing.Size(75, 23);
+            this.cmd_exit.TabIndex = 20;
+            this.cmd_exit.Text = "Thoát    \r\n";
+            this.cmd_exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cmd_exit.UseVisualStyleBackColor = false;
+            this.cmd_exit.Click += new System.EventHandler(this.cmd_exit_Click);
             // 
             // panel_show
             // 
@@ -160,9 +180,7 @@
             // 
             this.menuItemQuanLy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemPhongBan,
-            this.menuItemBoPhan,
-            this.menuItemLuongNV,
-            this.menuItemBangLuong});
+            this.menuItemLuongNV});
             this.menuItemQuanLy.Enabled = false;
             this.menuItemQuanLy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuItemQuanLy.Name = "menuItemQuanLy";
@@ -176,23 +194,12 @@
             this.menuItemPhongBan.Text = "&Phòng ban";
             this.menuItemPhongBan.Click += new System.EventHandler(this.menuItemPhongBan_Click);
             // 
-            // menuItemBoPhan
-            // 
-            this.menuItemBoPhan.Name = "menuItemBoPhan";
-            this.menuItemBoPhan.Size = new System.Drawing.Size(186, 24);
-            this.menuItemBoPhan.Text = "&Bộ phận";
-            // 
             // menuItemLuongNV
             // 
             this.menuItemLuongNV.Name = "menuItemLuongNV";
             this.menuItemLuongNV.Size = new System.Drawing.Size(186, 24);
             this.menuItemLuongNV.Text = "&Lương Nhân Viên";
-            // 
-            // menuItemBangLuong
-            // 
-            this.menuItemBangLuong.Name = "menuItemBangLuong";
-            this.menuItemBangLuong.Size = new System.Drawing.Size(186, 24);
-            this.menuItemBangLuong.Text = "&Bảng Lương";
+            this.menuItemLuongNV.Click += new System.EventHandler(this.menuItemLuongNV_Click);
             // 
             // MainForm
             // 
@@ -227,8 +234,7 @@
         public System.Windows.Forms.ToolStripMenuItem menuItemChucNang;
         public System.Windows.Forms.ToolStripMenuItem menuItemQuanLy;
         private System.Windows.Forms.ToolStripMenuItem menuItemPhongBan;
-        private System.Windows.Forms.ToolStripMenuItem menuItemBoPhan;
         private System.Windows.Forms.ToolStripMenuItem menuItemLuongNV;
-        private System.Windows.Forms.ToolStripMenuItem menuItemBangLuong;
+        private System.Windows.Forms.Button cmd_exit;
     }
 }
