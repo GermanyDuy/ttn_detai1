@@ -106,6 +106,7 @@
             this.buttonTong.Text = "Tính lương";
             this.buttonTong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonTong.UseVisualStyleBackColor = true;
+            this.buttonTong.Click += new System.EventHandler(this.buttonTong_Click);
             // 
             // button2
             // 

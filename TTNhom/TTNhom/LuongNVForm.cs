@@ -36,6 +36,10 @@ namespace TTNhom {
             this.Close();
         }
 
+        private void buttonTong_Click(object sender , EventArgs e) {
+
+        }
+
         private void GetData(string query , DataGridView grid , DataTable table) {
             access.createConn();
             adt = new SqlDataAdapter(query , conn);
