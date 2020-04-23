@@ -12,7 +12,6 @@ namespace TTNhom {
     public partial class MainForm : Form {
         
         public static string quyen;
-        public int k = 1;
 
         public MainForm() {
             InitializeComponent();
