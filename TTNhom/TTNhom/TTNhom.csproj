@@ -52,7 +52,19 @@
     <Compile Include="BaoHiemForm.Designer.cs">
       <DependentUpon>BaoHiemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DangKyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKyForm.Designer.cs">
+      <DependentUpon>DangKyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="DoiMatKhauForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhauForm.Designer.cs">
+      <DependentUpon>DoiMatKhauForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </Compile>
     <EmbeddedResource Include="BaoHiemForm.resx">
       <DependentUpon>BaoHiemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKyForm.resx">
+      <DependentUpon>DangKyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhauForm.resx">
+      <DependentUpon>DoiMatKhauForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -173,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TinhLuong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

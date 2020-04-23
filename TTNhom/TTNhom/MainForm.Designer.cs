@@ -28,7 +28,6 @@
             this.panel_show = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuItemTK = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemDangNhap = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemQuanLyTK = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemdmk = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
@@ -104,7 +103,6 @@
             // menuItemTK
             // 
             this.menuItemTK.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemDangNhap,
             this.menuItemQuanLyTK,
             this.menuItemdmk});
             this.menuItemTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,24 +111,20 @@
             this.menuItemTK.Size = new System.Drawing.Size(81, 20);
             this.menuItemTK.Text = "&Tài khoản";
             // 
-            // menuItemDangNhap
-            // 
-            this.menuItemDangNhap.Name = "menuItemDangNhap";
-            this.menuItemDangNhap.Size = new System.Drawing.Size(164, 24);
-            this.menuItemDangNhap.Text = "Đăng Nhập";
-            // 
             // menuItemQuanLyTK
             // 
             this.menuItemQuanLyTK.Enabled = false;
             this.menuItemQuanLyTK.Name = "menuItemQuanLyTK";
-            this.menuItemQuanLyTK.Size = new System.Drawing.Size(164, 24);
+            this.menuItemQuanLyTK.Size = new System.Drawing.Size(180, 24);
             this.menuItemQuanLyTK.Text = "QLy tài khoản";
+            this.menuItemQuanLyTK.Click += new System.EventHandler(this.menuItemQuanLyTK_Click);
             // 
             // menuItemdmk
             // 
             this.menuItemdmk.Name = "menuItemdmk";
-            this.menuItemdmk.Size = new System.Drawing.Size(164, 24);
+            this.menuItemdmk.Size = new System.Drawing.Size(180, 24);
             this.menuItemdmk.Text = "Đổi mật khẩu";
+            this.menuItemdmk.Click += new System.EventHandler(this.menuItemdmk_Click);
             // 
             // menuItemDanhMuc
             // 
@@ -224,7 +218,6 @@
         private System.Windows.Forms.Panel panel_show;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuItemTK;
-        private System.Windows.Forms.ToolStripMenuItem menuItemDangNhap;
         private System.Windows.Forms.ToolStripMenuItem menuItemQuanLyTK;
         private System.Windows.Forms.ToolStripMenuItem menuItemdmk;
         public System.Windows.Forms.ToolStripMenuItem menuItemDanhMuc;

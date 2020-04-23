@@ -28,7 +28,7 @@ namespace TTNhom {
             else if(quyen == "user") {
                 menuItemDanhMuc.Enabled = true;
                 menuItemChucNang.Enabled = true;
-                menuItemQuanLy.Enabled = true;
+                menuItemQuanLy.Enabled = false;
                 menuItemQuanLyTK.Enabled = false;
             }
         }
@@ -94,7 +94,29 @@ namespace TTNhom {
         }
 
         private void cmd_exit_Click(object sender , EventArgs e) {
-            Application.Exit();
+            this.Hide();
+            LoginForm form = new LoginForm();
+            form.Show();
+        }
+
+        private void menuItemdmk_Click(object sender , EventArgs e) {
+            DoiMatKhauForm form = new DoiMatKhauForm();
+            panel_show.Show();
+            panel_show.Controls.Clear();
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            panel_show.Controls.Add(form);
+            form.Show();
+        }
+
+        private void menuItemQuanLyTK_Click(object sender , EventArgs e) {
+            DangKyForm form = new DangKyForm();
+            panel_show.Show();
+            panel_show.Controls.Clear();
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            panel_show.Controls.Add(form);
+            form.Show();
         }
     }
 }

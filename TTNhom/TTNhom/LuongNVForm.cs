@@ -33,7 +33,7 @@ namespace TTNhom {
         }
 
         private void button2_Click(object sender , EventArgs e) {
-            Application.Exit();
+            this.Close();
         }
 
         private void GetData(string query , DataGridView grid , DataTable table) {
