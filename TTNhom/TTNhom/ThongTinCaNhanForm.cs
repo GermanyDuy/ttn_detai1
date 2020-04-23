@@ -74,6 +74,7 @@ namespace TTNhom {
         private void btnThem_Click(object sender, EventArgs e)
         {
             table = new DataTable();
+            manv = txtMaNV.Text;
             noisinh = txtNoiSinh.Text;
             diachi = txtDiachi.Text;
             sdt = txtSDT.Text;
@@ -86,6 +87,10 @@ namespace TTNhom {
             {
                 MessageBox.Show("Thiếu Thông tin !!!");
 
+            }
+            else if (manv != NhanSuForm.maNV)
+            {
+                MessageBox.Show("Mã NV này không tồn tại !!!");
             }
             else
             {
@@ -120,7 +125,6 @@ namespace TTNhom {
                 btnXoa.Enabled = false;
                 btnThem.Enabled = false;
             }
-            /*addComboBox(conn, cmd, list, "MaNV", "TblTTCaNhan", cboMaNV);*/
         }
         private void GetData(string query, DataGridView grid, DataTable table)
         {
