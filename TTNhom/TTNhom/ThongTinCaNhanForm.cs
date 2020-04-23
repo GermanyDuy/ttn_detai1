@@ -53,7 +53,15 @@ namespace TTNhom {
             quoctich = txtQuoctich.Text;
             hocvan = txtHocVan.Text;
 
-            if (noisinh.Equals("") || diachi.Equals("") || sdt.Equals("") || dantoc.Equals("") || tongiao.Equals("") || quoctich.Equals("") || hocvan.Equals(""))
+            string queryCheck = "select * from TblTTCaNhan where  MaNV = N'" + manv + "'  ";
+            access.readDataToAdapter(queryCheck, table);
+            int a = table.Rows.Count;
+            if (a == 0)
+            {
+                MessageBox.Show("Vui lòng Thêm thông tin trước khi thực hiện Sửa || Xóa");
+
+            }
+            else if (noisinh.Equals("") || diachi.Equals("") || sdt.Equals("") || dantoc.Equals("") || tongiao.Equals("") || quoctich.Equals("") || hocvan.Equals(""))
             {
                 MessageBox.Show("Thiếu Thông tin !!!");
 
@@ -83,14 +91,18 @@ namespace TTNhom {
             quoctich = txtQuoctich.Text;
             hocvan = txtHocVan.Text;
 
-            if (manv.Equals("") || noisinh.Equals("") || diachi.Equals("") || sdt.Equals("") || dantoc.Equals("") || tongiao.Equals("") || quoctich.Equals("") || hocvan.Equals(""))
+            string queryCheck = "select * from TblTTCaNhan where  MaNV = N'" + manv + "'  ";
+            access.readDataToAdapter(queryCheck, table);
+            int a = table.Rows.Count;
+            if (a != 0)
+            {
+                MessageBox.Show("Đã thêm Thông tin !!!\n Vui lòng Sửa or Xóa");
+
+            }
+            else if (manv.Equals("") || noisinh.Equals("") || diachi.Equals("") || sdt.Equals("") || dantoc.Equals("") || tongiao.Equals("") || quoctich.Equals("") || hocvan.Equals(""))
             {
                 MessageBox.Show("Thiếu Thông tin !!!");
 
-            }
-            else if (manv != NhanSuForm.maNV)
-            {
-                MessageBox.Show("Mã NV này không tồn tại !!!");
             }
             else
             {
@@ -157,6 +169,7 @@ namespace TTNhom {
             txtQuoctich.Text = quoctich;
             txtHocVan.Text = hocvan;
 
+            //btnThem.Enabled = false;
         }
         private void addComboBox(SqlConnection conn, SqlCommand cmd, List<string> list, string tenCot, string tenTable, ComboBox cb)
         {
