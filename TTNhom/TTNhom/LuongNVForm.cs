@@ -37,7 +37,14 @@ namespace TTNhom {
         }
 
         private void buttonTong_Click(object sender , EventArgs e) {
-
+            int lcb= Convert.ToInt32(textBoxLuongCB.Text);
+            int pc= Convert.ToInt32(textBoxPhuCap.Text);
+            int nc= Convert.ToInt32(textBoxNgayCong.Text);
+            int t= Convert.ToInt32(textBoxThuong.Text);
+            int kl= Convert.ToInt32(textBoxKyLuat.Text);
+            float luong = (lcb / 26) * nc + pc + t - kl;
+            textBoxTong.Text = luong.ToString();
+        
         }
 
         private void GetData(string query , DataGridView grid , DataTable table) {
@@ -64,7 +71,7 @@ namespace TTNhom {
 
         private void tableMain_CellClick(object sender , DataGridViewCellEventArgs e) {
             int index = e.RowIndex;
-            DataGridViewRow selectRow = tableMain.Rows[index];
+             DataGridViewRow selectRow = tableMain.Rows[index];
             maNV = int.Parse(selectRow.Cells[0].Value.ToString().Trim());
             maPhong = int.Parse(selectRow.Cells[1].Value.ToString().Trim());
             maLuong = selectRow.Cells[2].Value.ToString().Trim();
@@ -92,7 +99,7 @@ namespace TTNhom {
             else {
                 table = new DataTable();
                 string query1 = "UPDATE dbo.TblSoBH SET maLuong = NULL WHERE maLuong = '" + maLuong + "'";
-                string query2 = "DELETE dbo.TblBangCongNVCB WHERE maNV = " + maNV;
+                string query2 = "DELETE dbo.TblBangCongNVCB WHERE MaNV = " + maNV;
 
                 GetData(query1 , tableMain , table);
                 GetData(query2 , tableMain , table);
