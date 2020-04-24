@@ -73,6 +73,16 @@ namespace TTNhom.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1269825271_system_help {
+            get {
+                object obj = ResourceManager.GetObject("1269825271_system-help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _133 {
             get {
                 object obj = ResourceManager.GetObject("133", resourceCulture);

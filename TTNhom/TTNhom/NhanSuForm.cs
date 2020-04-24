@@ -57,6 +57,10 @@ namespace TTNhom {
             this.Hide();
         }
 
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Các chức năng thêm sửa xoá dành cho Admin","Help?");
+        }
+
         private void ButtonThem_Click(object sender, EventArgs e)
         {
             table = new DataTable();

@@ -38,13 +38,16 @@
             this.menuItemQuanLy = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemPhongBan = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemLuongNV = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::TTNhom.Properties.Resources.Main;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.cmd_exit);
             this.panel1.Controls.Add(this.panel_show);
             this.panel1.Controls.Add(this.menuStrip1);
@@ -195,6 +198,16 @@
             this.menuItemLuongNV.Text = "&Lương Nhân Viên";
             this.menuItemLuongNV.Click += new System.EventHandler(this.menuItemLuongNV_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::TTNhom.Properties.Resources._1269825271_system_help;
+            this.pictureBox1.Location = new System.Drawing.Point(859, 131);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 20);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,6 +221,7 @@
             this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -229,5 +243,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemPhongBan;
         private System.Windows.Forms.ToolStripMenuItem menuItemLuongNV;
         private System.Windows.Forms.Button cmd_exit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

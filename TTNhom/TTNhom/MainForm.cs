@@ -117,5 +117,9 @@ namespace TTNhom {
             panel_show.Controls.Add(form);
             form.Show();
         }
+
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Chức năng quản lý tài khoản và quản lý không\nđược truy cập trong quyền User" , "Help?");
+        }
     }
 }

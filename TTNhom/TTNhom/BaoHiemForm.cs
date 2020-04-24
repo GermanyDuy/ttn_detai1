@@ -145,6 +145,10 @@ namespace TTNhom {
             this.Hide();
         }
 
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Form quản lý số bảo hiểm dành cho Admin","Help?");
+        }
+
         private void addData()
         {
             List<string> listMNV = new List<string>();

@@ -115,6 +115,10 @@ namespace TTNhom {
             }
         }
 
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Nếu mã nhân viên đã tồn tại mà chưa có thông tin thì thực hiện chức năng thêm\n\nNếu đã tồn tại thông tin thì chỉ cho sửa","Help?");
+        }
+
         string quyen;
         List<string> list = new List<string>();
         public ThongTinCaNhanForm()

@@ -32,6 +32,7 @@
             this.buttonXoa = new System.Windows.Forms.Button();
             this.buttonSua = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label64 = new System.Windows.Forms.Label();
             this.comboBoxPhong = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableMain)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -168,6 +170,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.pictureBox1);
             this.groupBox4.Controls.Add(this.label64);
             this.groupBox4.Controls.Add(this.comboBoxPhong);
             this.groupBox4.Controls.Add(this.label57);
@@ -195,6 +198,16 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ghichu";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::TTNhom.Properties.Resources._1269825271_system_help;
+            this.pictureBox1.Location = new System.Drawing.Point(692, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 20);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label64
             // 
@@ -380,7 +393,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(770, 400);
+            this.ClientSize = new System.Drawing.Size(757, 400);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
@@ -392,6 +405,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -427,5 +441,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

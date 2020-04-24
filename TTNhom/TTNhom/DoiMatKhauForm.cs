@@ -80,5 +80,10 @@ namespace TTNhom {
                 }
             }
         }
+
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Form đổi mật khẩu cho phép Admin/User thay đổi mật khẩu\ncho tài khoản truy cập của mình " , "Help?");
+
+        }
     }
 }

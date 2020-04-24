@@ -135,5 +135,9 @@ namespace TTNhom {
             dateTimePickerDob.Format = DateTimePickerFormat.Custom;
             dateTimePickerDob.CustomFormat = "yyyy-MM-dd";
         }
+
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Tìm kiếm thông tin về nhân sự trong công ty" , "Help?");
+        }
     }
 }

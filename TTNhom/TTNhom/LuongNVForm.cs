@@ -47,6 +47,10 @@ namespace TTNhom {
         
         }
 
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Admin cập nhật mức thưởng/phạt/ngày công/ngày nghỉ của nhân viên trong công ty\n\nTổng lương = (LCB/26)* ngày công + thưởng + phụ cấp - phạt " , "Help?");
+        }
+
         private void GetData(string query , DataGridView grid , DataTable table) {
             access.createConn();
             adt = new SqlDataAdapter(query , conn);

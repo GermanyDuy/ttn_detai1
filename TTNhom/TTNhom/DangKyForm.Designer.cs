@@ -39,9 +39,11 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBoxQuyen = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tableMain)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableMain
@@ -230,6 +232,16 @@
             this.comboBoxQuyen.Size = new System.Drawing.Size(176, 23);
             this.comboBoxQuyen.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::TTNhom.Properties.Resources._1269825271_system_help;
+            this.pictureBox1.Location = new System.Drawing.Point(719, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 20);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // DangKyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,7 +249,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::TTNhom.Properties.Resources.afsadfdafdfaf;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(770, 400);
+            this.ClientSize = new System.Drawing.Size(757, 400);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableMain);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -249,6 +262,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,5 +284,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBoxQuyen;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

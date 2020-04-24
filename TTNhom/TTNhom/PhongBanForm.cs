@@ -120,5 +120,9 @@ namespace TTNhom {
             txtTenPB.Text = tenPB;
             txtMaP.Text = maPB.ToString();
         }
+
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Chức năng quản lý phòng ban cho Admin","Help?");
+        }
     }
 }

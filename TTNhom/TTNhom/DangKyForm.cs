@@ -70,6 +70,12 @@ namespace TTNhom {
 
             }
         }
+
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Form đăng ký cho phép Admin tạo tài khoản mới cho nhân viên\nhoặc xoá quyền truy cập của nhân viên" , "Help?");
+
+        }
+
         private void tableMain_CellClick(object sender , DataGridViewCellEventArgs e) {
             int index = e.RowIndex;
             DataGridViewRow selectRow = tableMain.Rows[index];

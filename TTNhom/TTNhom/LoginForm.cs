@@ -64,5 +64,9 @@ namespace TTNhom {
         private void LoginForm_Load(object sender , EventArgs e) {
 
         }
+
+        private void pictureBox1_Click(object sender , EventArgs e) {
+            MessageBox.Show("Quyền Admin có mọi quyền trong quản lý nhân viên (duyho/duy1234)\n\nQuyền user chỉ được xem với thay đổi mật khẩu của mình" , "Help?");
+        }
     }
 }

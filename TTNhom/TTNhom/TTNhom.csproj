@@ -195,5 +195,8 @@
   <ItemGroup>
     <None Include="Resources\remove_user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1269825271_system-help.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
